@@ -1,0 +1,19 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+
+# ── Build output ──────────────────────────────────────────────────────────────
+dist/
+*.tsbuildinfo
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+# .env.example is intentionally committed
+
+# ── Vite / Vitest cache ───────────────────────────────────────────────────────
+.vite/
+.vitest/
+
+# ── Test coverage ─────────────────────────────────────────────────────────────
+coverage/

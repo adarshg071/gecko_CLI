@@ -1,0 +1,13 @@
+{
+  "name": "gecko",
+  "private": true,
+  "workspaces": [
+    "apps/cli",
+    "packages/protocol"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=packages/protocol && npm run build --workspace=apps/cli",
+    "test": "cd apps/cli && npx vitest run",
+    "lint": "npm run lint --workspace=apps/cli"
+  }
+}
